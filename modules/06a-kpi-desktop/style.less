@@ -1,0 +1,178 @@
+.mdl-kpi-desktop {
+  display: flex;
+  width: 100%;
+  padding: 120px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 62.43%,
+      rgba(0, 0, 0, 0.7) 105.57%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url("https://via.placeholder.com/1680x565/4a5d23/ffffff?text=Mountain+Landscape")
+      lightgray 50% / cover no-repeat;
+  height: 565px;
+  color: #fff;
+
+  @media @mobile {
+    padding: 80px 20px;
+    height: auto;
+    min-height: 400px;
+    gap: 40px;
+  }
+
+  .kpi-container {
+    display: flex;
+    width: 100%;
+    max-width: 1406px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    @media @mobile {
+      gap: 40px;
+    }
+  }
+
+  .section-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    color: #fff;
+    text-align: center;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+
+    @media @mobile {
+      font-size: 32px;
+    }
+  }
+
+  .kpi-cards {
+    display: flex;
+    width: 100%;
+    max-width: 1406px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @media @mobile {
+      flex-direction: column;
+      gap: 30px;
+      align-items: stretch;
+    }
+  }
+
+  .kpi-card {
+    display: flex;
+    height: 213px;
+    padding: 0 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 2px solid #fff;
+    flex: 1;
+    position: relative;
+
+    @media @mobile {
+      height: auto;
+      padding: 20px 24px;
+      min-height: 150px;
+    }
+  }
+
+  .kpi-number-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+  }
+
+  .kpi-number {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 110px;
+    font-weight: 250;
+    line-height: 110px;
+    margin: 0;
+
+    .plus-sign {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    @media @mobile {
+      font-size: 80px;
+      line-height: 80px;
+
+      .plus-sign {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .kpi-label {
+    color: #fff3cc;
+    font-family:
+      "DM Mono",
+      monospace,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+
+    @media @mobile {
+      font-size: 16px;
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+  .kpi-description {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    max-width: 278px;
+
+    @media @mobile {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 100%;
+    }
+  }
+}
