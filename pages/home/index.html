@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGL Project - Home</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../dist/css/style.css" />
+
+    <!-- Fonts (optional - you can add your preferred fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Hero Module -->
+      <div id="hero-section">
+        <!-- Hero content will be loaded here -->
+      </div>
+
+      <!-- Additional content sections can go here -->
+      <section class="mdl-content">
+        <div class="container">
+          <h2>Welcome to Our Platform</h2>
+          <p>
+            This is where you can add more content sections, features, and
+            modules as needed.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer Module -->
+      <div id="footer-section">
+        <!-- Footer content will be loaded here -->
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../../modules/hero/script.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Module loader script -->
+    <script>
+      // Simple module loader
+      document.addEventListener("DOMContentLoaded", function () {
+        loadModule("hero", "hero-section");
+        loadModule("footer", "footer-section");
+      });
+
+      async function loadModule(moduleName, containerId) {
+        try {
+          const response = await fetch(`../../modules/${moduleName}/tpl.html`);
+          const html = await response.text();
+
+          // Extract just the module content (remove the full HTML structure)
+          const tempDiv = document.createElement("div");
+          tempDiv.innerHTML = html;
+          const moduleContent =
+            tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
+            tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
+
+          if (moduleContent) {
+            document.getElementById(containerId).innerHTML =
+              moduleContent.outerHTML;
+          } else {
+            console.warn(`Module content not found for ${moduleName}`);
+            document.getElementById(containerId).innerHTML = html;
+          }
+        } catch (error) {
+          console.error(`Error loading module ${moduleName}:`, error);
+        }
+      }
+    </script>
+  </body>
+</html>

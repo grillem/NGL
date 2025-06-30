@@ -1,0 +1,88 @@
+// Main LESS entry point
+
+// Import order is important
+@import "variables";
+@import "mixins";
+@import "reset";
+
+// Global styles
+html {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+// Module spacing
+[class^="mdl-"] {
+  .section-spacing();
+}
+
+// Content section styles
+.mdl-content {
+  .container();
+  text-align: center;
+  
+  h2 {
+    .heading(3.6rem, 600, 1.2);
+    margin-bottom: @spacing-md;
+    color: @primary-color;
+  }
+  
+  p {
+    .text(1.8rem, 400, 1.6);
+    color: @text-light;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Utility classes
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hidden { display: none; }
+.visible { display: block; }
+
+.container {
+  .container();
+}
+
+// Animation classes
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+[class^="mdl-"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  
+  &.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-loaded {
+  .mdl-hero {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media @mobile {
+  .hidden-mobile { display: none; }
+  .visible-mobile { display: block; }
+}
+
+@media @desktop {
+  .hidden-desktop { display: none; }
+  .visible-desktop { display: block; }
+}
+
+// Import module styles
+@import "../../modules/hero/style";
+@import "../../modules/footer/style"; 
