@@ -8,10 +8,6 @@
   background-color: #000;
   color: #fff;
 
-  @media @mobile {
-    padding: 60px 20px 80px 20px;
-  }
-
   .team-slide-container {
     display: flex;
     width: 100%;
@@ -42,10 +38,6 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
-
-    @media @mobile {
-      font-size: 32px;
-    }
   }
 
   .team-slider {
@@ -54,12 +46,6 @@
     align-items: flex-start;
     width: 100%;
     position: relative;
-
-    @media @mobile {
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-    }
   }
 
   .team-grid {
@@ -69,13 +55,6 @@
     width: 100%;
     gap: 20px;
     overflow-x: auto;
-
-    @media @mobile {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      overflow-x: visible;
-    }
   }
 
   .team-card {
@@ -85,12 +64,6 @@
     align-items: flex-start;
     gap: 20px;
     flex-shrink: 0;
-
-    @media @mobile {
-      width: 100%;
-      max-width: 300px;
-      align-items: center;
-    }
   }
 
   .team-image-container {
@@ -98,11 +71,6 @@
     height: 350px;
     position: relative;
     flex-shrink: 0;
-
-    @media @mobile {
-      width: 100%;
-      max-width: 252px;
-    }
   }
 
   .team-image-background {
@@ -125,11 +93,6 @@
     top: 36px;
     left: 0;
     z-index: 2;
-
-    @media @mobile {
-      height: 350px;
-      top: 0;
-    }
   }
 
   .social-icons {
@@ -175,11 +138,6 @@
     align-items: flex-start;
     gap: 12px;
     width: 100%;
-
-    @media @mobile {
-      align-items: center;
-      text-align: center;
-    }
   }
 
   .team-name {
@@ -195,10 +153,6 @@
     line-height: normal;
     margin: 0;
     width: 100%;
-
-    @media @mobile {
-      font-size: 18px;
-    }
   }
 
   .team-role {
@@ -210,46 +164,24 @@
       Helvetica,
       sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     margin: 0;
     width: 100%;
-
-    @media @mobile {
-      font-size: 13px;
-    }
   }
 
-  .slider-control {
-    display: flex;
-    height: 107px;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: -327px;
-
-    @media @mobile {
-      position: static;
-      justify-content: center;
-      height: auto;
-      margin-top: 20px;
-    }
-  }
-
-  .slider-icon {
-    width: 107px;
-    height: 107px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    @media @mobile {
-      width: 80px;
-      height: 80px;
-    }
+  .team-description {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    width: 100%;
   }
 }

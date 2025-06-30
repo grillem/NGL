@@ -11,21 +11,25 @@
   <body>
     <main>
       <div id="why-we-exist-section"></div>
-
-      <!-- <div id="team-slide-section"></div>
+      <div id="team-slide-section"></div>
       <div id="sponsors-section"></div>
       <div id="galeria-section"></div>
       <div id="benefits-section"></div>
       <div id="kpi-desktop-section"></div>
-      <div id="team-2-section"></div> -->
+      <div id="team-2-section"></div>
     </main>
 
     <!-- Module loader script -->
     <script>
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
-        // Only load the active module
         loadModule("03-why-we-exist", "why-we-exist-section");
+        loadModule("04-team-slide", "team-slide-section");
+        loadModule("04a-sponsors", "sponsors-section");
+        loadModule("04b-galeria", "galeria-section");
+        loadModule("06-benefits", "benefits-section");
+        loadModule("06a-kpi-desktop", "kpi-desktop-section");
+        loadModule("07-team-2", "team-2-section");
       });
 
       async function loadModule(moduleName, containerId) {
