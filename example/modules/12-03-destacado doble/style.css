@@ -1,0 +1,336 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-destacado-doble {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  padding-left: 21.6rem;
+  padding-right: 21.6rem;
+  background-color: #fff;
+}
+@media (max-width: 1365px) {
+  .mdl-destacado-doble {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-destacado-doble {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-destacado-doble {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-destacado-doble {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.mdl-destacado-doble .m-content {
+  margin: 0 auto;
+  max-width: 125rem;
+}
+.mdl-destacado-doble .m-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.mdl-destacado-doble .m-item:nth-child(odd) {
+  align-items: flex-start;
+}
+.mdl-destacado-doble .m-item:nth-child(odd) article {
+  padding-right: 7rem;
+  padding-bottom: 2rem;
+}
+.mdl-destacado-doble .m-item:nth-child(even) {
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.mdl-destacado-doble .m-item:nth-child(even) article {
+  padding-top: 2rem;
+  padding-left: 7rem;
+}
+.mdl-destacado-doble .m-item:nth-child(even) .m-media {
+  margin-top: -18rem;
+}
+.mdl-destacado-doble .m-media {
+  width: 48rem;
+}
+.mdl-destacado-doble .m-media img,
+.mdl-destacado-doble .m-media video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 0.75;
+  object-position: center;
+}
+.mdl-destacado-doble article {
+  width: 54rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.mdl-destacado-doble footer {
+  font: 600 1.2rem/2rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.36rem;
+}
+.mdl-destacado-doble footer + * {
+  margin-top: 0.6rem;
+}
+.mdl-destacado-doble header {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+@media (max-width: 1365px) {
+  .mdl-destacado-doble header {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-destacado-doble header {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
+.mdl-destacado-doble header + * {
+  margin-top: 2.4rem;
+}
+.mdl-destacado-doble section {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.mdl-destacado-doble section + * {
+  margin-top: 2.4rem;
+}
+.mdl-destacado-doble .m-button {
+  font: 600 1.5rem/1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.6s ease;
+  border: 0.1rem solid;
+  text-transform: none;
+  height: 5rem;
+  border-color: #3E441D;
+  color: #3E441D;
+}
+@media (min-width: 1366px) {
+  .mdl-destacado-doble .m-button:hover {
+    background-color: #3E441D;
+    color: #fff;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-destacado-doble .m-item:nth-child(odd) article {
+    padding-right: 0;
+  }
+  .mdl-destacado-doble .m-item:nth-child(even) article {
+    padding-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .mdl-destacado-doble .m-item:nth-child(even) .m-media {
+    margin-top: -2.4rem;
+  }
+  .mdl-destacado-doble .m-media {
+    width: 33rem;
+  }
+  .mdl-destacado-doble article {
+    width: calc(100% - 41rem);
+  }
+}
+@media (max-width: 767px) {
+  .mdl-destacado-doble .m-item {
+    flex-direction: column!important;
+    gap: 5rem;
+  }
+  .mdl-destacado-doble .m-item + * {
+    margin-top: 8rem;
+  }
+  .mdl-destacado-doble .m-media {
+    width: 100%;
+    margin-top: 0!important;
+  }
+  .mdl-destacado-doble article {
+    width: 100%;
+  }
+}

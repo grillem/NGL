@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src='../../js/scripts.js'></script>
+        <script src='script.js'></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <section class="mdl-ofertas js-tabclick">
+            <div class="m-content">
+                <div class="m-slide swiper">
+                    <div class="m-nav swiper-wrapper" data-tabs-id="restaurantes">
+                        <div class="s-tabclick swiper-slide v-selected" data-tabs-go="0">
+                            <span>Todas</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="ibiza">
+                            <span>Bless Ibiza</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="madrid">
+                            <span>Bless Madrid</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-grid" data-tabs-id="restaurantes">
+                    <div class="m-item v-selected" data-tabs="ibiza">
+                        <img src="../../imagestock/10-02/1.jpeg" alt="">
+                        <div class="m-section">
+                            <article>
+                                <div class="m-cat">Bless Ibiza</div>
+                                <header>Palladium Days</header>
+                                <section>Faucibus auctor facilisi et libero est tellus donec volutpat. Id commodo sit molestie sit mauris tristique. Tortor facilisi bibendum et rhoncus quis neque cras. Ut pretium suspendisse et faucibus tempor ut.</section>
+                                <a href="#" class="m-button">
+                                    <span>Me interesa</span>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="madrid">
+                        <img src="../../imagestock/11-02/1.jpg" alt="">
+                        <div class="m-section">
+                            <article>
+                                <div class="m-cat">Bless Madrid</div>
+                                <header>Palladium Days</header>
+                                <section>Faucibus auctor facilisi et libero est tellus donec volutpat. Id commodo sit molestie sit mauris tristique. Tortor facilisi bibendum et rhoncus quis neque cras. Ut pretium suspendisse et faucibus tempor ut.</section>
+                                <a href="#" class="m-button">
+                                    <span>Me interesa</span>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,294 @@
+@import "../../less/style";    
+
+main{
+    background-color: @color-off-white;
+}
+
+.mdl-hotel-home{
+    padding: 11rem 4.6rem;
+    position: relative;
+    z-index: 1;
+    background-color: @color-off-white;
+
+    &.v-visible{
+
+        .m-bg{
+            opacity: .5;
+        }
+    }
+
+    .m-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transition: @transition1;
+        background-color: @color-off-white;
+        
+        img{
+            position: absolute;
+            top: -10rem;
+            left: -10rem;
+            width: ~'calc(100% + 20rem)';
+            height: ~'calc(100% + 20rem)';
+            display: block;
+            object-fit: cover;
+            object-position: top center;
+            -webkit-filter: blur(5rem);
+            filter: blur(5rem);
+            opacity: 0;
+            transition: @transition1;
+
+            &.v-selected{
+                opacity: 1;
+            }
+        }
+    }
+
+    .m-content{
+        .maxW(@maxWXXL);
+        position: relative;
+    }
+
+    .m-header{
+        .css-pretitle-big();
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    .m-item{
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0) 50%);
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    article{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        color: @color1;
+    }
+
+    footer{
+        .css-pretitle-big();
+        min-height: 5.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-light();
+    }
+
+    .m-pagination{
+        display: flex;
+        justify-content: center;
+        margin: 5rem auto 0;
+
+        > *{
+            width: 3.5rem;
+            height: .2rem;
+            border-radius: 0;
+            margin: 0 .4rem!important;
+            background-color: @color-bless-700;
+
+            &:not(.swiper-pagination-bullet-active){
+                opacity: .3!important;
+            }
+        }
+    }
+
+    .m-auxiliar{
+        display: none;
+    }
+
+    .m-slide-menu{
+        display: none;
+    }
+
+    @media @sLaptop{
+
+        .m-auxiliar{
+            display: block;
+            width: ~'calc(33.33% - 1.6rem)';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s ease;
+    
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0) 50%);
+            }
+    
+            img{
+                width: 100%;
+                display: block;
+
+                &.v-enabled{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    display: none;
+                }
+            }
+
+            footer{
+                position: relative;
+
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 5.4rem;
+                    transition: .6s ease opacity;
+
+                    &.v-enabled{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        max-width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .m-item{
+
+            &.v-hovered{
+
+                article{
+                    color: @color1;
+                }
+            }
+
+            &:before{
+                display: none;
+            }
+
+            img,
+            footer,
+            .m-button{
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            article{
+                color: @color-bless-700;
+            }
+        }
+    }
+
+    @media @sLaptopL{
+        padding: 5rem 4rem;
+
+        .m-header{
+            margin-bottom: 5rem;
+        }
+
+        article{
+            padding: 3rem 4rem 4rem;
+        }
+    }
+
+    @media @mMobileL{
+        overflow: hidden;
+        padding-top: 6rem;
+
+        .m-header{
+            margin-bottom: 4rem;
+        }
+
+        .m-slide-content{
+            overflow: visible;
+        }
+
+        .m-item{
+            width: 33rem;
+        }
+
+        article{
+            padding: 2rem 3rem 3rem;
+        }
+    }
+
+    @media @smMobileL{
+        padding: 4.6rem 3.2rem;
+
+        .m-slide-menu{
+            .css-text();
+            .css-text-m();
+            font-weight: 600;
+            display: flex;
+            overflow: visible;
+
+            + *{
+                margin-top: 2rem;
+            }
+        }
+
+        .m-menu-item{
+            width: auto;
+            opacity: .5;
+            white-space: nowrap;
+
+            &.v-selected{
+                opacity: 1;
+            }
+        }
+
+        .m-pagination{
+            margin-top: 3.2rem;
+    
+            > *{
+                background-color: @color1;
+            }
+        }
+    }
+}

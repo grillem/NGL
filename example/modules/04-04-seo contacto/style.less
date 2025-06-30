@@ -1,0 +1,213 @@
+@import "../../less/style";    
+
+.mdl-seo-contacto{
+    .css-vertical-l();
+    background-color: @color-off-white;
+
+    &.v-white{
+        background-color: @color1;
+    }
+
+    .m-content{
+        .maxW(@maxWL);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    article{
+        width: ~'calc(100% - 63rem)';
+    }
+
+    .m-logo{
+        display: block;
+        width: 24rem;
+
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-title{
+        .css-pretitle-big();
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-section{
+        .css-text();
+        .css-text-m();
+
+        section{
+            overflow: hidden;
+        }
+        
+        footer{
+            font: 600 1.4rem/1.7rem @font2;
+        }
+
+        [s_see_more]{
+            margin-top: 2.4rem;
+            
+            .m-more{
+                
+                &.open{
+                    
+                    span{
+                        
+                        &:first-of-type{
+                            display: none;
+                        }
+                        
+                        &:last-of-type{
+                            display: block;
+                        }
+                    }
+                }
+        
+                span{
+                    transition: @transition1;
+                    
+                    &:last-of-type{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.2rem;
+
+        + *{
+            margin-top: 3.5rem
+        }
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+
+    .m-aux{
+        .css-text();
+        .css-text-s();
+        font-weight: 600;
+    }
+
+    aside{
+        flex: none;
+        width: 54rem;
+    }
+
+    .m-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.4rem;
+        padding: 3rem;
+        background-color: @color-black-100;
+
+        + *{
+            margin-top: 2.4rem;
+        }
+    }
+
+    .m-box-title{
+        .css-title();
+        .css-title-h5();
+
+        + *{
+            margin-top: 1rem;
+        }
+    }
+
+    .m-box-text{
+        .css-text();
+        .css-text-s();
+
+        a{
+            word-break: break-word;
+        }
+    }
+
+    .m-box-aside{
+        .css-text();
+        .css-text-s();
+        font-weight: 600;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+        gap: 1rem;
+    }
+
+    .m-button2{
+        .css-button();
+        .css-button-dark();
+        height: 5rem;
+    }
+
+    @media @sLaptopL{
+
+        article,
+        aside{
+            width: ~'calc(50% - 4.5rem)';
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-content{
+            display: block;
+
+            > *{
+                width: 100%;
+
+                + *{
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+
+    @media @smMobileL{
+
+        .m-box{
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .m-box-aside{
+            text-align: left;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+    }
+}

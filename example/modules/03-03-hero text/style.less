@@ -1,0 +1,67 @@
+@import "../../less/style";    
+
+.mdl-hero-text{
+    .css-vertical-m();
+    .css-horizontal-m();
+    padding-top: 25rem;
+    background-color: @color1;
+
+    .m-content{
+        .maxW(@maxWL);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 8rem;
+    }
+
+    .m-header{
+        width: 53rem;
+    }
+
+    .m-title{
+        .css-pretitle-big();
+
+        + *{
+            margin-top: 1rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h2();
+    }
+
+    section{
+        .css-text();
+        .css-text-m();
+        width: 42rem;
+    }
+
+    @media @sLaptopL{
+        padding-top: 20rem;
+    }
+
+    @media @mMobileL{
+
+        .m-content{
+            display: block;
+        }
+
+        .m-header{
+
+            + *{
+                margin-top: 4rem;
+            }
+        }
+
+        .m-header,
+        section{
+            width: 61rem;
+            max-width: 100%;
+        }
+    }
+
+    @media @smMobileL{
+        padding-top: 16rem;
+    }
+}

@@ -1,0 +1,152 @@
+@import "../../less/style";    
+
+.mdl-experiencia-destacada{
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+
+        > *{
+            flex: none;
+            width: 50%;
+        }
+    }
+
+    img{
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .m-section{
+        background-size: cover;
+        background-position: center;
+    }
+
+    article{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 11rem 9rem;
+        box-sizing: border-box;
+        backdrop-filter: blur(5rem);
+        color: @color1;
+        background-color: #3E441DCC;
+    }
+
+    time{
+        .css-text();
+        .css-text-m();
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        svg{
+            width: 2.4rem;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            
+            > *{
+                position: relative;
+
+                &:not(:last-of-type){
+    
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 2rem;
+                        right: -2rem;
+                        width: .1rem;
+                        background-color: @color1;
+                    }
+                }
+            }
+        }
+
+        + *{
+            margin-top: 1.6rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 3rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-s();
+
+        + *{
+            margin-top: 3rem;
+        }
+    }
+
+    .m-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-light();
+        height: 5rem;
+    }
+
+    .m-button2{
+        .css-button();
+        .css-button-border();
+        .css-button-border-light();
+    }
+
+    @media @sLaptopL{
+
+        article{
+            padding: 5rem 4rem;
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-content{
+            display: block;
+
+            > *{
+                width: 100%;
+            }
+        }
+
+        img{
+            height: 32rem;
+        }
+
+        article{
+            padding: 4rem;
+        }
+    }
+
+    @media @smMobileL{
+
+        img{
+            height: 26rem;
+        }
+
+        article{
+            padding: 4rem 2rem;
+        }
+    }
+}

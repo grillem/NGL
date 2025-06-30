@@ -1,0 +1,284 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-grid-hotel {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-color: #EAE5DF;
+}
+@media (max-width: 1365px) {
+  .mdl-grid-hotel {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-grid-hotel {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.mdl-grid-hotel .m-content {
+  margin: 0 auto;
+  max-width: 125rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6rem 2.4rem;
+}
+.mdl-grid-hotel .m-content > * {
+  width: calc(50% - 1.2rem);
+}
+.mdl-grid-hotel .m-img img {
+  width: 100%;
+  display: block;
+}
+.mdl-grid-hotel .m-img + * {
+  margin-top: 3rem;
+}
+.mdl-grid-hotel article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mdl-grid-hotel header {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+@media (max-width: 767px) {
+  .mdl-grid-hotel header {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+.mdl-grid-hotel header + * {
+  margin-top: 2.4rem;
+}
+.mdl-grid-hotel section {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.mdl-grid-hotel section a {
+  font-weight: 600;
+}
+@media (min-width: 1366px) {
+  .mdl-grid-hotel section a {
+    transition: 0.6s ease;
+  }
+  .mdl-grid-hotel section a:hover {
+    opacity: 0.7;
+  }
+}
+.mdl-grid-hotel section + * {
+  margin-top: 2.4rem;
+}
+.mdl-grid-hotel .m-button {
+  font: 600 1.5rem/1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.6s ease;
+  border: 0.1rem solid;
+  text-transform: none;
+  height: 5rem;
+  border-color: #3E441D;
+  color: #3E441D;
+}
+@media (min-width: 1366px) {
+  .mdl-grid-hotel .m-button:hover {
+    background-color: #3E441D;
+    color: #fff;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-grid-hotel {
+    padding-bottom: 7rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-grid-hotel {
+    padding-bottom: 6rem;
+  }
+  .mdl-grid-hotel .m-content {
+    display: block;
+  }
+  .mdl-grid-hotel .m-content > * {
+    width: 100%;
+  }
+  .mdl-grid-hotel .m-content > * + * {
+    margin-top: 6rem;
+  }
+}

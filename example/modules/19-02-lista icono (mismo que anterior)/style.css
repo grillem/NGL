@@ -1,0 +1,340 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-lista-logos {
+  background-color: #fff;
+}
+.mdl-lista-logos .m-content {
+  margin: 0 auto;
+  max-width: 150rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  position: relative;
+  background-color: #F1F1F1;
+}
+@media (max-width: 1365px) {
+  .mdl-lista-logos .m-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-lista-logos .m-content {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-lista-logos .m-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-lista-logos .m-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.mdl-lista-logos article {
+  margin: 0 auto;
+  max-width: 74rem;
+  text-align: center;
+}
+.mdl-lista-logos article + * {
+  margin-top: 7rem;
+}
+.mdl-lista-logos header {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+@media (max-width: 1365px) {
+  .mdl-lista-logos header {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-lista-logos header {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
+.mdl-lista-logos header + * {
+  margin-top: 2rem;
+}
+.mdl-lista-logos section {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.mdl-lista-logos .m-slide-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.mdl-lista-logos .m-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  width: calc(25% - 3.75rem);
+}
+.mdl-lista-logos .m-item img {
+  display: block;
+  width: 12rem;
+}
+.mdl-lista-logos .m-item img.v-icon {
+  width: 5rem;
+}
+.mdl-lista-logos .m-item img.v-icon + * {
+  margin-top: 1rem;
+}
+.mdl-lista-logos .m-item-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 0.1rem solid;
+  border-color: #3E441D;
+}
+.mdl-lista-logos .m-item-content a {
+  font: 600 1.4rem/1.7rem 'Montserrat', sans-serif;
+}
+@media (max-width: 1365px) {
+  .mdl-lista-logos .m-item-content a:hover {
+    opacity: 0.7;
+  }
+}
+.mdl-lista-logos .m-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+}
+.mdl-lista-logos .m-item-title + * {
+  margin-top: -1.2rem;
+}
+.mdl-lista-logos .m-aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: calc(100% - 95rem);
+}
+.mdl-lista-logos .m-pagination {
+  display: none;
+}
+@media (max-width: 1365px) {
+  .mdl-lista-logos .m-item {
+    width: calc(33.33% - 3.33rem);
+  }
+}
+@media (max-width: 1023px) {
+  .mdl-lista-logos .m-content {
+    overflow: hidden;
+  }
+  .mdl-lista-logos .m-grid {
+    overflow: visible;
+  }
+  .mdl-lista-logos .m-slide-content {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .mdl-lista-logos .m-item {
+    width: 22rem;
+  }
+  .mdl-lista-logos .m-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 7rem auto 0;
+    left: auto!important;
+    transform: none!important;
+  }
+  .mdl-lista-logos .m-pagination > * {
+    flex: none;
+    width: 3.5rem;
+    height: 0.2rem;
+    border-radius: 0;
+    margin: 0 0.4rem !important;
+    transform: none!important;
+    background-color: #3E441D;
+  }
+  .mdl-lista-logos .m-pagination > *:not(.swiper-pagination-bullet-active) {
+    opacity: 0.3 !important;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-lista-logos .m-pagination {
+    margin-top: 9.5rem;
+  }
+}

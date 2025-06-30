@@ -1,0 +1,364 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-ofertas-destacado {
+  overflow: hidden;
+  position: relative;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  background-color: #EAE5DF;
+}
+.mdl-ofertas-destacado .m-imgs {
+  opacity: 0.3;
+}
+.mdl-ofertas-destacado .m-img {
+  position: absolute;
+}
+.mdl-ofertas-destacado .m-img.v-1 {
+  top: 0;
+  left: 0;
+  width: 24rem;
+}
+.mdl-ofertas-destacado .m-img.v-2 {
+  left: 27.6rem;
+  bottom: 5.4rem;
+  width: 35.4rem;
+}
+.mdl-ofertas-destacado .m-img.v-3 {
+  right: 23rem;
+  bottom: 100%;
+  width: 38rem;
+  transform: translateY(31rem);
+}
+.mdl-ofertas-destacado .m-img.v-4 {
+  top: 100%;
+  right: 0;
+  width: 28rem;
+  transform: translateY(-21rem);
+}
+.mdl-ofertas-destacado .m-img.v-5 {
+  display: none;
+}
+.mdl-ofertas-destacado .m-content {
+  margin: 0 auto;
+  max-width: 74rem;
+  padding: 4rem;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.mdl-ofertas-destacado article {
+  margin: 0 auto;
+  max-width: 58rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.mdl-ofertas-destacado header {
+  font: 600 1.5rem/2.6rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-destacado header {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+.mdl-ofertas-destacado header + * {
+  margin-top: 1.6rem;
+}
+.mdl-ofertas-destacado section {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+@media (max-width: 1365px) {
+  .mdl-ofertas-destacado section {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-destacado section {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
+.mdl-ofertas-destacado section + * {
+  margin-top: 4.3rem;
+}
+.mdl-ofertas-destacado .m-button {
+  font: 600 1.5rem/1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.6s ease;
+  border: 0.1rem solid;
+  text-transform: none;
+  height: 5rem;
+  border-color: #3E441D;
+  color: #3E441D;
+}
+@media (min-width: 1366px) {
+  .mdl-ofertas-destacado .m-button:hover {
+    background-color: #3E441D;
+    color: #fff;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-ofertas-destacado .m-img.v-1 {
+    width: 17rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-2 {
+    left: 8.6rem;
+    bottom: 5.5rem;
+    width: 25rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-3 {
+    right: 10rem;
+    width: 27rem;
+    transform: translateY(27rem);
+  }
+  .mdl-ofertas-destacado .m-img.v-4 {
+    width: 20rem;
+    transform: translateY(-17rem);
+  }
+  .mdl-ofertas-destacado .m-content {
+    padding: 5rem 4rem;
+  }
+  .mdl-ofertas-destacado article {
+    max-width: 52rem;
+  }
+}
+@media (max-width: 1023px) {
+  .mdl-ofertas-destacado .m-img.v-1 {
+    width: 21rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-2 {
+    left: 6rem;
+    bottom: 6.4rem;
+    width: 20rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-3 {
+    top: 0;
+    right: 7.2rem;
+    bottom: auto;
+    width: 22rem;
+    transform: none;
+  }
+  .mdl-ofertas-destacado .m-img.v-4 {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 18rem;
+    transform: none;
+  }
+  .mdl-ofertas-destacado .m-content {
+    max-width: 50rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-destacado {
+    padding: 10rem 5rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-1 {
+    width: 11rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-2 {
+    top: 9rem;
+    left: auto;
+    right: 2rem;
+    bottom: auto;
+    width: 20rem;
+  }
+  .mdl-ofertas-destacado .m-img.v-3 {
+    display: none;
+  }
+  .mdl-ofertas-destacado .m-img.v-4 {
+    right: 2.5rem;
+    bottom: 9.3rem;
+    width: 13rem;
+    z-index: 1;
+  }
+  .mdl-ofertas-destacado .m-img.v-5 {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 27rem;
+  }
+  .mdl-ofertas-destacado .m-content {
+    padding: 4rem;
+    max-width: 100%;
+  }
+  .mdl-ofertas-destacado .m-button {
+    width: 100%;
+  }
+}

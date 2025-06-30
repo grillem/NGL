@@ -1,0 +1,110 @@
+*{color:inherit;border:0;margin:0;padding:0;}
+a{text-size-adjust:none;-webkit-text-size-adjust:none;text-decoration:none;}
+address{font-style:normal;}
+body{font-size:12px;}
+button{background:none;}
+mark{background:none;}
+:focus{outline:none!important;}
+::-moz-focus-inner{border:0;}
+summary::-webkit-details-marker{display:none;}
+input{background:none;border-radius:0;}
+button, input[type="submit"], input[type="text"]{-webkit-appearance:none;}
+textarea{font-family:inherit;background-color:transparent;}
+h1,h2,h3,h4,h5,h6{text-transform:none;font-weight: inherit;font-style: inherit;font-size: inherit;}
+p{width:100%;}
+img{width:auto;height:auto;}
+
+@import "fonts";
+@import "funciones";
+
+//Medidas
+html{
+    font-size: 62.5%;
+    
+    &.over-hidden{
+        overflow: hidden;
+    }
+    
+    body{
+        font: 10px '';
+    }
+    
+    main{
+        position: relative;
+    }
+}
+
+//Global
+
+p{
+    margin-bottom: 2.4rem;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media @sLaptopL{
+        margin-bottom: 2.4rem;
+    
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+[id^="sta"]{
+    position: fixed;
+    top: 0;
+    left: -99px;
+}
+
+    //Separación entre módulos
+[class^="mdl-"]{
+    padding: 9rem;
+
+    @media @sLaptopL{
+        padding: 4rem;
+    }
+
+    @media @smMobileL{
+        padding: 2rem;
+    }
+}
+
+.eff-init_trans{
+    
+    *{
+        transition: none!important;
+    }
+}
+ 
+/* Owner theme */
+body{
+    color: @color-bless-700;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+    background-color: @color1;
+}
+
+.css-panel-color-brand{
+    background-color: #C39D79;
+}
+
+.css-panel-color-orange{
+    background-color: #E1CDBA;
+}
+
+.css-panel-color-wine{
+    background-color: #AE9494;
+}
+
+.css-panel-color-green{
+    background-color: #AAB4AC;
+}
+
+.css-panel-color-light-green{
+    background-color: #B3B3A8;
+}

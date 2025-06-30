@@ -1,0 +1,202 @@
+@import "../../less/style";        
+
+.mdl-destacado-slide-simple{
+    background-color: @color-off-white;
+    
+    &.v-white{
+        background-color: @color1;
+    }
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .m-slide-content{
+        width: 48rem;
+        margin: 0;
+    }
+
+    .m-media{
+
+        img{
+            width: 100%;
+            display: block;
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .m-full{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 5;
+        cursor: pointer;
+        transition: @transition1;
+        
+        svg{
+            width: 4rem;
+            height: auto;
+        }
+
+        @media @sLaptop{
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+
+    .m-controls{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        z-index: 5;
+
+        > *{
+            .css-button-icon();
+            .css-button-icon-small();
+            .css-button-icon-dark();
+        }
+    }
+
+    article{
+        width: 48rem;
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 3rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-s();
+
+        + *{
+            margin-top: 4rem;
+        }
+    }
+
+    aside{
+        flex: none;
+        width: 29rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .m-item{
+        .css-text();
+        .css-text-s();
+
+        + *{
+            margin-top: 3rem;
+        }
+
+        + .m-button{
+            margin-top: 5rem;
+        }
+    }
+
+    .m-item-title{
+        font-weight: 600;
+        padding-bottom: .6rem;
+        border-bottom: .1rem solid;
+        border-color: @color-black-200;
+
+        + *{
+            margin-top: 1rem;
+        }
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+    
+    @media @sLaptopL{
+        
+        .m-slide-content{
+            width: 35rem;
+        }
+
+        article{
+            width: 42rem;
+        }
+
+        aside{
+            width: 26rem;
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-content{
+            flex-wrap: wrap;
+        }
+        
+        .m-slide-content{
+            width: 36rem;
+        }
+
+        article{
+            width: ~'calc(100% - 40rem)';
+        }
+
+        aside{
+            gap: 2.4rem;
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .m-item{
+            flex-grow: 1;
+
+            + *{
+                margin-top: 0!important;
+            }
+        }
+
+        .m-button{
+            flex: none;
+            align-self: center;
+        }
+    }
+
+    @media @smMobileL{
+        
+        .m-slide-content{
+            width: 100%;
+        }
+
+        article{
+            width: 100%;
+        }
+
+        aside{
+            width: 29rem;
+            align-items: flex-start;
+            flex-direction: column;
+            align-self: center;
+            margin: 0 auto;
+        }
+
+        .m-button{
+            align-self: flex-start;
+        }
+    }
+}

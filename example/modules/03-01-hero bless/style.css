@@ -1,0 +1,318 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-hero {
+  height: 100dvh;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  background-color: #000;
+}
+.mdl-hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50rem);
+}
+.mdl-hero .m-slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mdl-hero .m-slide {
+  display: flex;
+}
+.mdl-hero .m-item {
+  width: 25%;
+  position: static;
+}
+.mdl-hero .m-item.v-enabled img {
+  opacity: 1;
+}
+.mdl-hero .m-item.v-enabled img {
+  z-index: 1;
+}
+.mdl-hero .m-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  height: 100dvh;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease opacity;
+}
+.mdl-hero .m-content {
+  margin: 0 auto;
+  max-width: 150rem;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+  color: #fff;
+}
+.mdl-hero header {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 9rem;
+  max-width: 90rem;
+}
+@media (max-width: 1365px) {
+  .mdl-hero header {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-hero header {
+    font-size: 4.6rem;
+    line-height: 5.2rem;
+  }
+}
+.mdl-hero header + * {
+  margin-top: 2.8rem;
+}
+.mdl-hero section {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  max-width: 48rem;
+}
+.mdl-hero section + * {
+  margin-top: 5rem;
+}
+.mdl-hero .m-scrolldown {
+  font: 700 1rem/1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.mdl-hero .m-scrolldown:before {
+  content: '';
+  height: 100%;
+  width: 0.2rem;
+  margin-right: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.mdl-hero .m-scrolldown:after {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 0.2rem;
+  height: 2rem;
+  animation: drop-animation 1s linear infinite;
+  background-color: #fff;
+}
+@media (min-width: 1366px) {
+  .mdl-hero .m-item {
+    transform: none;
+  }
+}
+@media (max-width: 1365px) {
+  .mdl-hero .m-item {
+    width: 100%;
+  }
+  .mdl-hero .m-item img {
+    position: static;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-hero {
+    padding-bottom: 12rem;
+  }
+  .mdl-hero .m-content {
+    text-align: center;
+  }
+  .mdl-hero header + * {
+    margin-top: 2rem;
+  }
+  .mdl-hero .m-scrolldown {
+    display: none;
+  }
+}
+@keyframes drop-animation {
+  0% {
+    top: -2rem;
+  }
+  100% {
+    top: 5rem;
+  }
+}

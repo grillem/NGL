@@ -1,0 +1,230 @@
+@import "../../less/style";        
+
+.mdl-experiencias-relacionadas{
+    padding: 0;
+
+    .m-header{
+        padding: 12rem 9rem 10rem;
+    }
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    article{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 82rem;
+    }
+    
+    header{
+        .css-pretitle-big();
+
+        + *{
+            margin-top: 1.6rem;
+        }
+    }
+
+    section{
+        .css-title();
+        .css-title-h3();
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+        flex: none;
+    }
+
+    .m-item{
+        width: 39rem;
+        position: relative;
+        text-align: center;
+        color: @color1;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: @transition1;
+            background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+        }
+
+        img{
+            width: 100%;
+            display: block;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media @sLaptop{
+
+            &:hover{
+
+                &:before{
+                    opacity: 0;
+                }
+
+                .m-hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .m-title{
+        .css-text();
+        .css-text-xl();
+        position: absolute;
+        left: 4rem;
+        right: 4rem;
+        bottom: 4rem;
+        z-index: 1;
+    }
+
+    .m-hover{
+        .css-text();
+        .css-text-s();
+        font-weight: 500;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+        opacity: 0;
+        transition: @transition1;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .m-controls{
+
+        > *{
+            .css-button-icon();
+            .css-button-icon-small();
+            .css-button-icon-light();
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            background-color: @color1;
+        }
+    }
+
+    .m-left{
+        left: 9rem;
+    }
+
+    .m-right{
+        right: 9rem;
+    }
+
+    .m-pagination{
+        display: none;
+    }
+
+    @media @sLaptopL{
+
+        .m-header{
+            padding: 7rem 4rem 10rem;
+        }
+
+        .m-content{
+            gap: 3.4rem;
+        }
+        
+        .m-item{
+            width: 32rem;
+        }
+
+        .m-title{
+            left: 3rem;
+            right: 3rem;
+        }
+
+        .m-left{
+            left: 4rem;
+        }
+
+        .m-right{
+            right: 4rem;
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-header{
+            padding-bottom: 6rem;
+        }
+
+        .m-content{
+            gap: 2rem;
+        }
+        
+        .m-item{
+            width: 25rem;
+        }
+
+        .m-controls{
+            display: none;
+        }
+
+        .m-pagination{
+            justify-content: center;
+            margin: 6rem auto 0;
+            padding-bottom: 7rem;
+
+            &.swiper-pagination-bullets{
+                display: flex;
+            }
+    
+            > *{
+                width: 3.5rem;
+                height: .2rem;
+                border-radius: 0;
+                margin: 0 .4rem!important;
+                background-color: @color-bless-700;
+    
+                &:not(.swiper-pagination-bullet-active){
+                    opacity: .3!important;
+                }
+            }
+        }
+    }
+
+    @media @smMobileL{
+
+        .m-header{
+            padding: 6rem 2rem 5rem;
+        }
+
+        .m-content{
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        
+        .m-item{
+            width: 27rem;
+        }
+
+        .m-pagination{
+            margin-top: 5rem;
+            padding-bottom: 6rem;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import "../../less/style";    
+
+.mdl-destacado-simple{
+    background-color: @color1;
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 4.8rem;
+    }
+
+    .m-media{
+        flex: none;
+        width: 29rem;
+        align-self: flex-start;
+
+        .m-big{
+            display: none;
+        }
+    }
+
+    .m-small{
+        display: block;
+        width: 100%;
+    }
+
+    .m-big{
+        width: 54rem;
+        max-width: ~'calc(100% - 84rem)';
+    }
+
+    article{
+        flex: none;
+        width: 45rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    footer{
+        .css-pretitle-small();
+
+        + *{
+            margin-top: .6rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 2.4rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-s();
+
+        + *{
+            margin-top: 2.4rem;
+        }
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+
+    @media @sLaptop{
+
+        &.v-b{
+
+            .m-big{
+                width: 42rem;
+                max-width: ~'calc(100% - 87rem)';
+            }
+
+            article{
+                width: 48rem;
+            }
+        }
+    }
+
+    @media @mMobile{
+
+        &.v-b{
+
+            .m-content{
+                align-items: flex-start;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    @media @sLaptopL{
+
+        .m-media{
+            width: 26rem;
+        }
+
+        .m-big{
+            width: 35rem;
+            max-width: ~'calc(100% - 76rem)';
+        }
+
+        article{
+            width: 40rem;
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-content{
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .m-media{
+            width: 36.4rem;
+
+            .m-big{
+                display: block;
+                flex: none;
+                width: ~'calc(100% - 6.4rem)';
+                max-width: 100%;
+                margin-left: auto;
+            }
+        }
+
+        .m-small{
+            width: 17rem;
+            margin-top: -13rem;
+        }
+
+        .m-big{
+            display: none;
+        }
+
+        article{
+            width: ~'calc(100% - 41rem)';
+        }
+    }
+
+    @media @smMobileL{
+
+        .m-content{
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .m-media{
+            width: 100%;
+        }
+
+        article{
+            width: 100%;
+        }
+    }
+}

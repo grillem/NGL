@@ -1,0 +1,226 @@
+@import "../../less/style";        
+
+.mdl-habitaciones-destacado{
+    .css-vertical-m();
+    background-color: @color-off-white;
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    article{
+        text-align: center;
+
+        + *{
+            margin-top: 6rem;
+        }
+    }
+
+    header{
+        .css-pretitle-big();
+
+        + *{
+            margin-top: 1.5rem;
+        }
+    }
+
+    section{
+        .css-title();
+        .css-title-h3();
+    }
+
+    .m-slide-content{
+        width: 100%;
+    }
+
+    .m-slide{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 4rem 2.4rem;
+
+        + *{
+            margin-top: 8rem;
+        }
+    }
+
+    .m-item{
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: @transition1;
+            background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+        }
+
+        img{
+            width: 100%;
+            display: block;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media @sLaptop{
+
+            &:hover{
+
+                &:before{
+                    opacity: 0;
+                }
+
+                .m-hovered{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .m-hovered{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: @transition1;
+        
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            background-color: rgba(0,0,0,.3);
+        }
+
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5rem;
+            height: auto;
+            z-index: 5;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .m-item-pagination{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        z-index: 6;
+        transform: translateX(-50%);
+
+        > *{
+            width: 3.5rem;
+            height: .2rem;
+            border-radius: 0;
+            margin: 0 .4rem!important;
+            background-color: @color1;
+
+            &:not(.swiper-pagination-bullet-active){
+                opacity: .3!important;
+            }
+        }
+    }
+
+    .m-title{
+        .css-text();
+        .css-text-xl();
+        font-weight: 500;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        padding: 3rem 2rem;
+        text-align: center;
+        color: @color1;
+    }
+
+    .m-pagination{
+        display: none;
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+        margin-top: 6rem;
+    }
+
+    @media @mMobile{
+
+        .m-item{
+            width: ~'calc(25% - 1.8rem)';
+        }
+    }
+
+    @media @sLaptopL{
+        
+        .m-hovered{
+            display: none;
+        }
+    }
+
+    @media @mMobileL{
+        overflow: hidden;
+
+        .m-slide-content{
+            overflow: visible;
+        }
+        
+        .m-slide{
+            gap: 0;
+            flex-wrap: nowrap;
+            justify-content: inherit;
+        }
+
+        .m-item{
+            width: 29rem;
+        }
+
+        .m-pagination{
+            display: flex;
+            justify-content: center;
+            margin: 6rem auto 0;
+    
+            > *{
+                width: 3.5rem;
+                height: .2rem;
+                border-radius: 0;
+                margin: 0 .4rem!important;
+                background-color: @color-bless-700;
+    
+                &:not(.swiper-pagination-bullet-active){
+                    opacity: .3!important;
+                }
+            }
+        }
+    }
+
+    @media @smMobileL{
+
+        .m-pagination{
+            margin-top: 4rem;
+        }
+
+        .m-button{
+            margin-top: 4rem;
+        }
+    }
+}

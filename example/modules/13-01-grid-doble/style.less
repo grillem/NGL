@@ -1,0 +1,94 @@
+@import "../../less/style";        
+
+.mdl-grid-doble{
+    .css-vertical-m();
+    padding-bottom: 12rem;
+    background-color: @color-off-white;
+
+    &.v-white{
+        background-color: @color1;
+    }
+
+    .m-content{
+        .maxW(125rem);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4rem 2.4rem;
+
+        > *{
+            width: ~'calc(50% - 1.2rem)';
+        }
+    }
+
+    .m-img{
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        + *{
+            margin-top: 3rem;
+        }
+    }
+
+    article{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    footer{
+        .css-pretitle-small();
+
+        + *{
+            margin-top: .6rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 2.4rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-s();
+
+        + *{
+            margin-top: 2.4rem;
+        }
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+
+    @media @sLaptopL{
+        padding-bottom: 7rem;
+    }
+
+    @media @smMobileL{
+        padding-bottom: 6rem;
+
+        .m-content{
+            display: block;
+
+            > *{
+                width: 100%;
+
+                + *{
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+}

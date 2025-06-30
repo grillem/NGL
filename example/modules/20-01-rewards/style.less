@@ -1,0 +1,211 @@
+@import "../../less/style";    
+
+.mdl-rewards{
+    position: relative;
+    background-color: @color1;
+    box-shadow: inset 0 20rem 0 0 @color-off-white;
+
+    &.v-color{
+        background-color: @color-off-white;
+    }
+
+    .m-content{
+        .maxW(@maxWXL);
+        display: flex;
+        position: relative;
+        background-color: @color1;
+        box-shadow: 0 2rem 8rem 0 rgba(0,0,0,.06);
+    }
+
+    .m-logo{
+        width: 22rem;
+        max-width: 100%;
+
+        + *{
+            margin-top: 2rem;
+        }
+    }
+
+    .m-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: none;
+        width: 95rem;
+        gap: 4rem;
+        padding: 7rem 5rem;
+        box-sizing: border-box;
+    }
+
+    article{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 1rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-m();
+
+        + *{
+            margin-top: 2rem;
+        }
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+
+    .m-grid{
+        width: 26rem;
+        flex: none;
+    }
+    
+    .m-slide-content{
+        
+        > *{
+            background-color: @color-off-white;
+        }
+    }
+
+    .m-item{
+        .css-text();
+        .css-text-s();
+        padding: 1.3rem 3rem;
+        box-sizing: border-box;
+
+        span{
+            .css-title();
+            .css-title-h6();
+            display: block;
+            margin-bottom: .3rem;
+        }
+    }
+
+    .m-aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: ~'calc(100% - 95rem)';
+    }
+
+    .m-pagination{
+        display: flex;
+        justify-content: center;
+        margin: 2.8rem auto 0;
+
+        > *{
+            width: 3.5rem;
+            height: .2rem;
+            border-radius: 0;
+            margin: 0 .4rem!important;
+            background-color: @color-bless-700;
+
+            &:not(.swiper-pagination-bullet-active){
+                opacity: .3!important;
+            }
+        }
+    }
+
+    @media @mMobile{
+    
+        .m-slide-content{
+            display: block;
+
+            > *{
+
+                + *{
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .m-pagination{
+            display: none;
+        }
+    }
+
+    @media @sLaptopL{
+        box-shadow: inset 0 18rem 0 0 @color-off-white;
+
+        .m-section{
+            width: 71rem;
+            gap: 4rem;
+            padding: 6.6rem 4rem;
+        }
+
+        .m-logo{
+            width: 18rem;
+        }
+
+        .m-aside{
+            width: ~'calc(100% - 71rem)';
+        }
+    }
+
+    @media @mMobileL{
+        box-shadow: inset 0 23rem 0 0 @color-off-white;
+
+        .m-section{
+            width: 39rem;
+            display: block;
+            padding: 3.5rem 4rem;
+        }
+
+        article{
+
+            + *{
+                margin-top: 4rem;
+            }
+        }
+
+        .m-grid{
+            max-width: 30rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .m-item{
+            text-align: center;
+        }
+
+        .m-aside{
+            width: ~'calc(100% - 39rem)';
+        }
+    }
+
+    @media @smMobileL{
+        box-shadow: inset 0 34rem 0 0 @color-off-white;
+
+        .m-content{
+            display: block;
+        }
+
+        .m-section{
+            width: 100%;
+            padding: 4rem 3rem;
+        }
+
+        .m-aside{
+            position: static;
+            width: 100%;
+            height: 26rem;
+            display: block;
+        }
+    }
+}

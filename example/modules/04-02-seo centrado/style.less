@@ -1,0 +1,144 @@
+@import "../../less/style";    
+
+.mdl-seo-centrado{
+    .css-vertical-l();
+    background-color: @color-off-white;
+
+    &.v-white{
+        background-color: @color1;
+    }
+
+    &.v-align-left{
+
+        .m-logo{
+            margin-left: 0;
+        }
+
+        .m-title,
+        header,
+        .m-section{
+            text-align: left
+        }
+    }
+
+    .m-content{
+        .maxW(@maxWM);
+    }
+
+    .m-logo{
+        display: block;
+        margin: 0 auto;
+        width: 24rem;
+
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-title{
+        .css-pretitle-big();
+        text-align: center;
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+        text-align: center;
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-section{
+        .css-text();
+        .css-text-m();
+        text-align: center;
+
+        section{
+            overflow: hidden;
+        }
+        
+        footer{
+            font: 600 1.4rem/1.7rem @font2;
+        }
+
+        [s_see_more]{
+            margin-top: 2.4rem;
+            
+            .m-more{
+                
+                &.open{
+                    
+                    span{
+                        
+                        &:first-of-type{
+                            display: none;
+                        }
+                        
+                        &:last-of-type{
+                            display: block;
+                        }
+                    }
+                }
+        
+                span{
+                    transition: @transition1;
+                    
+                    &:last-of-type{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-text{
+        .css-text();
+        .css-text-s();
+        column-count: 2;
+        column-gap: 4.8rem;
+
+        + *{
+            margin-top: 3.5rem;
+        }
+    }
+
+    .m-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-dark();
+    }
+
+    @media @smMobileL{
+
+        .m-text{
+            column-count: 1;
+        }
+
+        .m-buttons{
+            flex-direction: column;
+        }
+    }
+}

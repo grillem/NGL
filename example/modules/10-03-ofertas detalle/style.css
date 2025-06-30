@@ -1,0 +1,392 @@
+@charset "UTF-8";
+* {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+}
+button {
+  background: none;
+}
+mark {
+  background: none;
+}
+:focus {
+  outline: none!important;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+input {
+  background: none;
+  border-radius: 0;
+}
+button,
+input[type="submit"],
+input[type="text"] {
+  -webkit-appearance: none;
+}
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+p {
+  width: 100%;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url('../../fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), url('../../fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+/**/
+/**/
+/**/
+/**/
+/* H1 */
+/* H2 */
+/* H3 */
+/* H4 */
+/* H5 */
+/* H6 */
+/* Spacings */
+.eff-init_trans * {
+  transition: none!important;
+}
+html {
+  font-size: 62.5%;
+}
+html.over-hidden {
+  overflow: hidden;
+}
+html body {
+  font: 10px '';
+}
+html main {
+  position: relative;
+}
+p {
+  margin-bottom: 2.4rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1365px) {
+  p {
+    margin-bottom: 2.4rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+[id^="sta"] {
+  position: fixed;
+  top: 0;
+  left: -99px;
+}
+[class^="mdl-"] {
+  padding: 9rem;
+}
+@media (max-width: 1365px) {
+  [class^="mdl-"] {
+    padding: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  [class^="mdl-"] {
+    padding: 2rem;
+  }
+}
+.eff-init_trans * {
+  transition: none!important;
+}
+/* Owner theme */
+body {
+  color: #3E441D;
+}
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+.css-panel-color-brand {
+  background-color: #C39D79;
+}
+.css-panel-color-orange {
+  background-color: #E1CDBA;
+}
+.css-panel-color-wine {
+  background-color: #AE9494;
+}
+.css-panel-color-green {
+  background-color: #AAB4AC;
+}
+.css-panel-color-light-green {
+  background-color: #B3B3A8;
+}
+.mdl-ofertas-detalle {
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+.mdl-ofertas-detalle .m-content {
+  margin: 0 auto;
+  max-width: 168rem;
+  display: flex;
+}
+.mdl-ofertas-detalle .m-content > * {
+  flex: none;
+  width: 50%;
+}
+.mdl-ofertas-detalle img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.mdl-ofertas-detalle .m-section {
+  box-sizing: border-box;
+  padding: 9rem 9rem 12rem 5rem;
+}
+.mdl-ofertas-detalle .m-info-content + * {
+  margin-top: 4rem;
+}
+.mdl-ofertas-detalle article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+.mdl-ofertas-detalle article + * {
+  margin-top: 3rem;
+}
+.mdl-ofertas-detalle .m-cat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  color: #fff;
+  background-color: #3E441D;
+}
+.mdl-ofertas-detalle .m-cat + * {
+  margin-top: 3rem;
+}
+.mdl-ofertas-detalle footer {
+  font: 600 1.2rem/2rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.36rem;
+}
+.mdl-ofertas-detalle footer + * {
+  margin-top: 0.6rem;
+}
+.mdl-ofertas-detalle header {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+@media (max-width: 1365px) {
+  .mdl-ofertas-detalle header {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-detalle header {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
+.mdl-ofertas-detalle header + * {
+  margin-top: 3rem;
+}
+.mdl-ofertas-detalle section {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.mdl-ofertas-detalle .m-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #F1F1F1;
+}
+.mdl-ofertas-detalle .m-box-info {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-detalle .m-box-info {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+.mdl-ofertas-detalle .m-box-info span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  display: block;
+}
+.mdl-ofertas-detalle .m-button {
+  font: 600 1.5rem/1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.6s ease;
+  color: #fff;
+  background-color: #3E441D;
+  height: 5rem;
+  flex: none;
+}
+@media (min-width: 1366px) {
+  .mdl-ofertas-detalle .m-button:hover {
+    background-color: #212121;
+  }
+}
+.mdl-ofertas-detalle .m-list ul {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding-left: 2rem;
+}
+.mdl-ofertas-detalle .m-list ul li {
+  list-style: disc;
+}
+.mdl-ofertas-detalle .m-list-title {
+  font-family: 'Bodoni 72', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-detalle .m-list-title {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+.mdl-ofertas-detalle .m-list-title + * {
+  margin-top: 2rem;
+}
+@media (max-width: 1365px) {
+  .mdl-ofertas-detalle .m-content {
+    align-items: flex-start;
+  }
+  .mdl-ofertas-detalle img {
+    aspect-ratio: 1;
+  }
+  .mdl-ofertas-detalle .m-section {
+    padding: 6rem 4rem 6rem 5rem;
+  }
+}
+@media (max-width: 1023px) {
+  .mdl-ofertas-detalle {
+    padding: 4rem 4rem 10rem;
+  }
+  .mdl-ofertas-detalle .m-content {
+    flex-wrap: wrap;
+  }
+  .mdl-ofertas-detalle .m-content > * {
+    width: 100%;
+  }
+  .mdl-ofertas-detalle img {
+    height: 42rem;
+  }
+  .mdl-ofertas-detalle img + * {
+    margin-top: 6rem;
+  }
+  .mdl-ofertas-detalle .m-section {
+    padding: 0;
+  }
+  .mdl-ofertas-detalle .m-info-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+  .mdl-ofertas-detalle .m-info-content + * {
+    margin-top: 4rem;
+  }
+  .mdl-ofertas-detalle article + * {
+    margin-top: 0;
+  }
+  .mdl-ofertas-detalle .m-box {
+    flex: none;
+    width: 30rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .mdl-ofertas-detalle {
+    padding: 2rem 2rem 4rem;
+  }
+  .mdl-ofertas-detalle img + * {
+    margin-top: 4.5rem;
+  }
+  .mdl-ofertas-detalle .m-info-content {
+    display: block;
+  }
+  .mdl-ofertas-detalle article + * {
+    margin-top: 3rem;
+  }
+  .mdl-ofertas-detalle .m-box {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+  }
+}

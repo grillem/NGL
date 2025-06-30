@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src='../../js/scripts.js'></script>
+        <script src='script.js'></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <section class="mdl-lugares js-tabclick">
+            <div class="m-content">
+                <div class="m-slide swiper">
+                    <div class="m-nav swiper-wrapper" data-tabs-id="lugares">
+                        <div class="s-tabclick swiper-slide v-selected" data-tabs-go="0">
+                            <span>Todas</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="hacer">
+                            <span>Que hacer</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="visitar">
+                            <span>Que visitar</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="comer">
+                            <span>Dónde comer</span>
+                        </div>
+                        <div class="s-tabclick swiper-slide" data-tabs-go="nocturna">
+                            <span>Vida nocturna</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-grid" data-tabs-id="lugares">
+                    <div class="m-item v-selected" data-tabs="visitar">
+                        <a href="#" class="m-img">
+                            <!-- aspect-ratio: 3 / 4 -->
+                            <img src="../../imagestock/17-01/1.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Dalt Vila: El Corazón Histórico y Cultural de Ibiza</header>
+                            <section>Pasea por las calles empedradas de Dalt Vila, el casco antiguo de Ibiza declarado Patrimonio de la Humanidad, donde la historia y las vistas panorámicas te transportarán a otra época.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="nocturna">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/2.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Ushuaia Ibiza</header>
+                            <section>Las fiestas de Ushuaïa Ibiza son el epicentro del entretenimiento de lujo en la isla. Con un ambiente vibrante y lleno de energía, este icónico beach club ofrece actuaciones de los DJs más reconocidos del mundo.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="hacer">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/3.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Exploración de Formentera en Velero</header>
+                            <section>Haz una escapada privada a la isla de Formentera, navegando en velero para descubrir sus playas vírgenes y aguas turquesas, lejos de las multitudes.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected v-big" data-tabs="visitar">
+                        <a href="#" class="m-img">
+                            <!-- aspect-ratio: 1 -->
+                            <img src="../../imagestock/17-01/4.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Mercadillo semanal Las Dalias</header>
+                            <section>El Mercado de Las Dalias es un emblemático espacio bohemio en Ibiza, lleno de color, arte y creatividad. Todos los sábados, se transforma en un vibrante mercado donde puedes descubrir piezas únicas de artesanía, moda, joyería y arte local.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected v-big" data-tabs="nocturna">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/5.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Lío Ibiza: donde la Gastronomía, el Cabaret y el Glamour se encuentran</header>
+                            <section>Lío Ibiza es una experiencia única que combina alta cocina, espectáculos de cabaret de primer nivel y una vibrante vida nocturna en un entorno de lujo incomparable. Con vistas espectaculares al puerto y Dalt Vila.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="hacer">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/6.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Atardeceres en Beach Clubs Exclusivos</header>
+                            <section>Vive los legendarios atardeceres de Ibiza desde un beach club de lujo, disfrutando de cócteles exclusivos en un ambiente elegante y relajado.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="visitar">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/7.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Visita Privada a Es Vedrà en Helicóptero</header>
+                            <section>Admira la mística roca de Es Vedrà desde el aire con una excursión en helicóptero, disfrutando de vistas incomparables de la isla.</section>
+                        </article>
+                    </div>
+                    <div class="m-item v-selected" data-tabs="comer">
+                        <a href="#" class="m-img">
+                            <img src="../../imagestock/17-01/8.jpg" alt="">
+                            <div class="m-hover">
+                                <div class="m-cat">Categoría</div>
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 25.2C10 24.5096 10.5596 23.95 11.25 23.95H38.75C39.4404 23.95 40 24.5096 40 25.2C40 25.8903 39.4404 26.45 38.75 26.45H11.25C10.5596 26.45 10 25.8903 10 25.2Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 10.2C25.6904 10.2 26.25 10.7596 26.25 11.45V38.95C26.25 39.6403 25.6904 40.2 25 40.2C24.3096 40.2 23.75 39.6403 23.75 38.95V11.45C23.75 10.7596 24.3096 10.2 25 10.2Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <article>
+                            <header>Las Salinas: Playa Exclusiva y Reserva Natural en Ibiza</header>
+                            <section>Una de las playas más icónicas y exclusivas de Ibiza, rodeada por la impresionante Reserva Natural de Ses Salines, donde la naturaleza y el lujo se encuentran.</section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

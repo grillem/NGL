@@ -1,0 +1,153 @@
+@import "../../less/style";        
+
+.mdl-grid-hotel-big{
+    .css-vertical-l();
+    .css-horizontal-m();
+    background-color: @color1;
+
+    .m-content{
+        .maxW(@maxWL);
+    }
+
+    .m-grid{
+        margin-left: -7.5rem;
+        margin-right: -7.5rem;
+    }
+
+    .m-item{
+        width: ~'calc(50% - 15rem)';
+        margin: 0 7.5rem;
+
+        &:nth-child(2){
+            margin-top: 30rem;
+        }
+
+        + *{
+            margin-top: 15rem;
+        }
+    }
+
+    .m-img{
+        position: relative;
+
+        img{
+            width: 100%;
+            display: block;
+            aspect-ratio: 611 / 814;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        + *{
+            margin-top: 3rem;
+        }
+
+        @media @sLaptop{
+
+            &:hover{
+
+                .m-hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .m-title{
+        .css-pretitle-big();
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+        right: 3rem;
+        z-index: 2;
+        text-align: center;
+        color: @color1;
+    }
+
+    .m-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: @transition1;
+    }
+
+    .m-button{
+        .css-button();
+        .css-button-border();
+        .css-button-border-light();
+        position: absolute;
+        left: 50%;
+        bottom: 5rem;
+        transform: translateX(-50%);
+        max-width: ~'calc(100% - 6rem)';
+    }
+
+    article{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 3rem;
+    }
+
+    header{
+        .css-title();
+        .css-title-h3();
+
+        + *{
+            margin-top: 1rem;
+        }
+    }
+
+    section{
+        .css-text();
+        .css-text-m();
+    }
+
+    @media @sLaptopL{
+        
+        .m-grid{
+            margin-left: -2.5rem;
+            margin-right: -2.5rem;
+        }
+
+        .m-item{
+            width: ~'calc(50% - 5rem)';
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        .m-hover{
+            display: none;
+        }
+    }
+
+    @media @mMobileL{
+
+        .m-grid{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5rem;
+            margin: 0;
+            height: auto!important;
+        }
+
+        .m-item{
+            margin: 0!important;
+            position: static!important;
+            width: ~'calc(50% - 2.5rem)';
+        }
+    }
+
+    @media @smMobileL{
+        
+        .m-item{
+            width: 100%;
+        }
+    }
+}
