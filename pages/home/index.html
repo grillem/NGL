@@ -23,6 +23,11 @@
         <!-- Hero content will be loaded here -->
       </div>
 
+      <!-- Content Module (for testing) -->
+      <div id="content-section">
+        <!-- Content module will be loaded here -->
+      </div>
+
       <!-- Footer Module -->
       <div id="footer-section">
         <!-- Footer content will be loaded here -->
@@ -38,6 +43,7 @@
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
         loadModule("hero", "hero-section");
+        loadModule("content", "content-section");
         loadModule("footer", "footer-section");
       });
 

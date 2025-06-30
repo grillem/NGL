@@ -1,0 +1,61 @@
+.mdl-content {
+  background-color: @background-color;
+  
+  .content-container {
+    .container();
+    text-align: center;
+    
+    @media @mobile {
+      text-align: left;
+    }
+  }
+  
+  .content-header {
+    margin-bottom: @spacing-xl;
+    
+    @media @mobile {
+      margin-bottom: @spacing-lg;
+    }
+  }
+  
+  .content-title {
+    .heading(3.6rem, 600, 1.2);
+    color: @primary-color;
+    margin-bottom: @spacing-md;
+    
+    @media @mobile {
+      .heading(2.8rem, 600, 1.2);
+    }
+  }
+  
+  .content-subtitle {
+    .text(2rem, 400, 1.5);
+    color: @text-light;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    @media @mobile {
+      .text(1.8rem, 400, 1.5);
+      margin: 0;
+    }
+  }
+  
+  .content-body {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    p {
+      .text(1.6rem, 400, 1.7);
+      color: @text-color;
+      margin-bottom: @spacing-md;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      @media @mobile {
+        .text(1.5rem, 400, 1.6);
+      }
+    }
+  }
+} 
