@@ -53,79 +53,42 @@ h6 {
   font-size: inherit;
   line-height: inherit;
 }
-.mdl-hero {
+.mdl-why-we-exist {
   display: flex;
   width: 100%;
-  padding: 60px 40px;
+  padding: 80px 40px;
   justify-content: center;
   align-items: center;
   background-color: #000;
   color: #fff;
-  min-height: 500px;
 }
 @media (max-width: 393px) {
-  .mdl-hero {
-    padding: 40px 20px;
-    min-height: auto;
+  .mdl-why-we-exist {
+    padding: 60px 20px;
   }
 }
-.mdl-hero .hero-content {
+.mdl-why-we-exist .why-we-exist-container {
   display: flex;
-  width: 100%;
-  max-width: 1400px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
 }
 @media (max-width: 393px) {
-  .mdl-hero .hero-content {
-    flex-direction: column;
+  .mdl-why-we-exist .why-we-exist-container {
     gap: 40px;
-    text-align: center;
   }
 }
-.mdl-hero .hero-text-section {
-  display: flex;
-  width: 100%;
-  max-width: 560px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-  flex-shrink: 0;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-text-section {
-    max-width: 100%;
-    align-items: center;
-  }
-}
-.mdl-hero .hero-text-content {
+.mdl-why-we-exist .section-header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  width: 100%;
+  align-items: center;
+  gap: 24px;
 }
-@media (max-width: 393px) {
-  .mdl-hero .hero-text-content {
-    align-items: center;
-  }
-}
-.mdl-hero .hero-title-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  width: 100%;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-title-section {
-    align-items: center;
-  }
-}
-.mdl-hero .hero-main-title {
-  width: 100%;
+.mdl-why-we-exist .section-title {
   color: #fff;
+  text-align: center;
   font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -133,148 +96,110 @@ h6 {
   margin: 0;
 }
 @media (max-width: 393px) {
-  .mdl-hero .hero-main-title {
+  .mdl-why-we-exist .section-title {
     font-size: 32px;
-    text-align: center;
   }
 }
-.mdl-hero .hero-description-section {
+.mdl-why-we-exist .cards-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
   width: 100%;
 }
 @media (max-width: 393px) {
-  .mdl-hero .hero-description-section {
-    align-items: center;
+  .mdl-why-we-exist .cards-container {
+    flex-direction: column;
+    gap: 24px;
   }
 }
-.mdl-hero .hero-description {
+.mdl-why-we-exist .card {
+  display: flex;
   width: 100%;
+  max-width: 366px;
+  min-height: 250px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mdl-why-we-exist .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 393px) {
+  .mdl-why-we-exist .card {
+    max-width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+}
+.mdl-why-we-exist .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  width: 100%;
+}
+.mdl-why-we-exist .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.mdl-why-we-exist .card-number {
+  color: #fff;
+  font-family: "DM Mono", monospace, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+}
+.mdl-why-we-exist .card-title {
+  color: #fff;
+  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 393px) {
+  .mdl-why-we-exist .card-title {
+    font-size: 20px;
+  }
+}
+.mdl-why-we-exist .card-description {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 1;
+  width: 100%;
+}
+.mdl-why-we-exist .card-description p {
   color: #fff;
   font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
+  text-align: center;
+  width: 100%;
   margin: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex: 1;
 }
 @media (max-width: 393px) {
-  .mdl-hero .hero-description {
+  .mdl-why-we-exist .card-description p {
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
-    -webkit-line-clamp: none;
-    overflow: visible;
-  }
-}
-.mdl-hero .hero-read-more {
-  height: 24px;
-  width: 100%;
-  overflow: hidden;
-  color: #fff;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  cursor: pointer;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-read-more {
-    text-align: center;
-  }
-}
-.mdl-hero .hero-read-more:hover {
-  opacity: 0.8;
-}
-.mdl-hero .hero-download-btn {
-  display: flex;
-  min-width: 160px;
-  padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 10px;
-  border: 1px solid #fff;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-download-btn {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-.mdl-hero .hero-download-btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-.mdl-hero .hero-download-btn:hover .btn-text {
-  color: #000;
-}
-.mdl-hero .hero-download-btn:hover .btn-icon path {
-  fill: #000;
-}
-.mdl-hero .hero-download-btn .btn-text {
-  color: #fff;
-  text-align: center;
-  font-family: "DM Mono", monospace, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  transition: color 0.3s ease;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-download-btn .btn-text {
-    font-size: 14px;
-  }
-}
-.mdl-hero .hero-download-btn .btn-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-.mdl-hero .hero-download-btn .btn-icon path {
-  fill: white;
-  transition: fill 0.3s ease;
-}
-.mdl-hero .hero-image-section {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  max-width: 767px;
-  width: 100%;
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-image-section {
-    max-width: 100%;
-  }
-}
-.mdl-hero .hero-geometric-shape {
-  width: 100%;
-  max-width: 767px;
-  height: auto;
-  position: relative;
-}
-.mdl-hero .hero-geometric-shape .hero-shape-image {
-  width: 100%;
-  height: auto;
-  max-height: 650px;
-  object-fit: cover;
-  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-}
-@media (max-width: 393px) {
-  .mdl-hero .hero-geometric-shape .hero-shape-image {
-    clip-path: none;
-    border-radius: 10px;
   }
 }

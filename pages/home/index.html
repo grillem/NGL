@@ -10,15 +10,22 @@
   </head>
   <body>
     <main>
-      <!-- Hero Module -->
-      <div id="hero-section"></div>
+      <div id="why-we-exist-section"></div>
+
+      <!-- <div id="team-slide-section"></div>
+      <div id="sponsors-section"></div>
+      <div id="galeria-section"></div>
+      <div id="benefits-section"></div>
+      <div id="kpi-desktop-section"></div>
+      <div id="team-2-section"></div> -->
     </main>
 
     <!-- Module loader script -->
     <script>
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
-        loadModule("hero", "hero-section");
+        // Only load the active module
+        loadModule("03-why-we-exist", "why-we-exist-section");
       });
 
       async function loadModule(moduleName, containerId) {
