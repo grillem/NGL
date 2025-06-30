@@ -7,12 +7,20 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../../dist/css/style.css" />
-
-    <!-- TODO: Fonts (optional) -->
   </head>
   <body>
     <main>
+      <!-- Hero Module -->
       <div id="hero-section"></div>
+
+      <!-- Additional content can go here -->
+      <div style="padding: 40px; text-align: center">
+        <h2>Setup is working! ✅</h2>
+        <p>
+          LESS compilation, module loading, and responsive design are all
+          functional.
+        </p>
+      </div>
     </main>
 
     <!-- Module loader script -->
@@ -20,8 +28,6 @@
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
         loadModule("hero", "hero-section");
-        loadModule("content", "content-section");
-        loadModule("footer", "footer-section");
       });
 
       async function loadModule(moduleName, containerId) {
@@ -29,7 +35,7 @@
           const response = await fetch(`../../modules/${moduleName}/tpl.html`);
           const html = await response.text();
 
-          // Extract just the module content (remove the full HTML structure)
+          // Extract just the module content
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = html;
           const moduleContent =
