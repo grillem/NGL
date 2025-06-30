@@ -78,7 +78,7 @@ h6 {
 }
 .mdl-why-we-exist .section-title {
   color: #fff;
-  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "DM Sans";
   font-size: 40px;
   font-weight: 400;
   line-height: normal;
@@ -123,7 +123,7 @@ h6 {
 }
 .mdl-why-we-exist .card-number {
   color: #fff;
-  font-family: "DM Mono", monospace, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "DM Mono";
   font-size: 14px;
   font-weight: 300;
   line-height: normal;
@@ -131,11 +131,10 @@ h6 {
 }
 .mdl-why-we-exist .card-title {
   color: #fff;
-  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "DM Sans";
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
-  text-align: center;
   width: 100%;
   margin: 0;
 }
@@ -148,7 +147,7 @@ h6 {
 }
 .mdl-why-we-exist .card-description p {
   color: #fff;
-  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "DM Sans";
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
