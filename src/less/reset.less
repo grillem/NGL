@@ -1,4 +1,4 @@
-// CSS Reset and Normalize
+// CSS Reset
 *,
 *::before,
 *::after {
@@ -14,18 +14,17 @@ html {
 }
 
 body {
-  font-family: @font-primary;
+  font-family: Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: @text-color;
-  background-color: @background-color;
+  color: #212121;
+  background-color: #fff;
 }
 
 // Links
 a {
   color: inherit;
   text-decoration: none;
-  transition: @transition-normal;
 }
 
 // Images
@@ -49,7 +48,6 @@ select {
 
 button {
   cursor: pointer;
-  transition: @transition-normal;
 }
 
 // Lists
@@ -63,10 +61,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-// Focus states
-:focus {
-  outline: 2px solid @primary-color;
-  outline-offset: 2px;
 } 
