@@ -77,21 +77,6 @@ npm run build
 - `npm run build-less-compressed` - Compile LESS to minified CSS
 - `npm run build` - Build both development and production CSS
 
-## Media Queries
-
-The project includes responsive design with the following breakpoints:
-
-- **Mobile**: `max-width: 768px`
-- **Tablet**: `769px - 1024px`
-- **Desktop**: `min-width: 1025px`
-
-Additional specific breakpoints:
-
-- **Mobile Small**: `max-width: 480px`
-- **Mobile Large**: `max-width: 767px`
-- **Desktop Small**: `1025px - 1366px`
-- **Desktop Large**: `min-width: 1367px`
-
 ## Creating New Modules
 
 1. Create a new directory in `modules/`
@@ -104,67 +89,6 @@ Additional specific breakpoints:
    @import "../../modules/your-module/style";
    ```
 
-## Creating New Pages
-
-1. Create a new directory in `pages/`
-2. Add `index.html` and optionally `script.js`
-3. Include modules using the module loader pattern from the home page
-
 ## LESS Variables
 
 Key variables available globally:
-
-### Colors
-
-- `@primary-color: #3e441d`
-- `@secondary-color: #c39d79`
-- `@background-color: #fff`
-- `@text-color: #212121`
-
-### Spacing
-
-- `@spacing-xs: 0.5rem`
-- `@spacing-sm: 1rem`
-- `@spacing-md: 2rem`
-- `@spacing-lg: 3rem`
-- `@spacing-xl: 4rem`
-
-### Transitions
-
-- `@transition-fast: 0.2s ease`
-- `@transition-normal: 0.3s ease`
-- `@transition-slow: 0.6s ease`
-
-## Mixins
-
-Useful mixins available:
-
-- `.container()` - Responsive container with max-width
-- `.flex()` - Flexbox helper with parameters
-- `.flex-center()` - Center content with flexbox
-- `.heading()` - Responsive typography for headings
-- `.text()` - Text styling with parameters
-- `.button()` - Button styling with hover effects
-- `.section-spacing()` - Consistent section padding
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile browsers
-- IE11+ (with some limitations)
-
-## Development Tips
-
-1. Use the modular structure to keep code organized
-2. Leverage LESS variables and mixins for consistency
-3. Test responsive design at different breakpoints
-4. Use semantic HTML and proper accessibility attributes
-5. Keep modules self-contained and reusable
-
-## Contributing
-
-1. Follow the existing code structure
-2. Use meaningful class names with BEM methodology where appropriate
-3. Test changes across different screen sizes
-4. Ensure LESS compiles without errors
-5. Keep modules independent and reusable
