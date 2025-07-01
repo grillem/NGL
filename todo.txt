@@ -1,4 +1,3 @@
-remove all console logs
 sticky header should only appear when scrolling down, after the hero section.
 
 
