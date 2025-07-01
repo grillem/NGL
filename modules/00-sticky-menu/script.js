@@ -1,3 +1,4 @@
+// Comment
 (function () {
   setTimeout(function () {
     const stickyMenu = document.querySelector(".mdl-sticky-menu");
