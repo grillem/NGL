@@ -121,7 +121,6 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  cursor: pointer;
 }
 .mdl-sticky-menu .contact-info .language-selector .chevron-icon {
   width: 20px;
@@ -307,7 +306,6 @@ h6 {
 .mdl-hero .hero-content {
   width: 100%;
   max-width: 917px;
-  padding-top: 100px;
 }
 .mdl-hero .hero-text-section {
   display: flex;
