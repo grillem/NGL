@@ -1,0 +1,132 @@
+// 00-sticky-menu styles
+.mdl-sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #000;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 41px;
+  box-sizing: border-box;
+
+  .sticky-menu-container {
+    display: flex;
+    width: 100%;
+    max-width: 1598px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-section {
+    .nextgenlab-logo {
+      width: 219.309px;
+      height: 25.009px;
+      flex-shrink: 0;
+    }
+  }
+
+  .menu-info-section {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .contact-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .phone-icon,
+    .mail-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contact-text,
+    .language-text {
+      color: #fff;
+      font-family:
+        "DM Sans",
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    .separator {
+      width: 1px;
+      height: 16px;
+      opacity: 0.8;
+      background: #fff;
+    }
+
+    .language-selector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+
+      .chevron-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    .menu-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  // Mobile styles
+  @media @mobile {
+    padding: 15px 20px;
+    height: 70px;
+
+    .sticky-menu-container {
+      gap: 10px;
+    }
+
+    .logo-section {
+      .nextgenlab-logo {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    .contact-info {
+      display: none;
+    }
+
+    .menu-button {
+      .menu-icon {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
