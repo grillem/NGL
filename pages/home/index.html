@@ -52,26 +52,7 @@
         try {
           const response = await fetch(`../../modules/${moduleName}/tpl.html`);
           const html = await response.text();
-
-          // Extract just the module content
-          const tempDiv = document.createElement("div");
-          tempDiv.innerHTML = html;
-
-          // Special handling for sticky menu to include burger overlay
-          if (moduleName === "00-sticky-menu") {
-            document.getElementById(containerId).innerHTML = html;
-          } else {
-            const moduleContent =
-              tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
-              tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
-
-            if (moduleContent) {
-              document.getElementById(containerId).innerHTML =
-                moduleContent.outerHTML;
-            } else {
-              document.getElementById(containerId).innerHTML = html;
-            }
-          }
+          document.getElementById(containerId).innerHTML = html;
 
           await loadModuleScript(moduleName);
         } catch (error) {
