@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watch-less\" \"npm run serve\"",
-    "serve": "live-server --port=3000 --open=/pages/home/ --ignore=node_modules --watch=dist/css,pages,modules",
+    "serve": "browser-sync start --server --startPath='/pages/home/' --files='dist/css/*.css,pages/**/*.html,modules/**/*.js' --ignore='modules/**/*.html' --port=3000",
     "watch-less": "chokidar \"src/less/**/*.less\" \"modules/**/*.less\" -c \"npm run build-less\"",
     "build-less": "lessc src/less/style.less dist/css/style.css",
     "build-less-compressed": "lessc src/less/style.less dist/css/style.min.css --compress",
@@ -13,6 +13,7 @@
     "test-change": "npm run build-less && echo '✅ LESS compiled! Check your browser - it should auto-refresh.'"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.6.0",
     "less": "^4.1.3",
