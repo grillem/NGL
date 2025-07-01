@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="../../dist/css/style.css" />
   </head>
   <body>
+    <div id="sticky-menu-section"></div>
     <main>
+      <div id="hero-section"></div>
       <div id="why-we-exist-section"></div>
       <div id="team-slide-section"></div>
       <div id="sponsors-section"></div>
@@ -31,6 +33,8 @@
     <script>
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
+        loadModule("00-sticky-menu", "sticky-menu-section");
+        loadModule("01-hero", "hero-section");
         loadModule("03-why-we-exist", "why-we-exist-section");
         loadModule("04-team-slide", "team-slide-section");
         loadModule("04a-sponsors", "sponsors-section");
