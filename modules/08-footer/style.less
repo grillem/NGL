@@ -1,0 +1,207 @@
+.mdl-footer {
+  width: 100%;
+  height: 366px;
+  background: #000;
+  color: #fff;
+
+  @media @mobile {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 1680px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media @mobile {
+      padding: 40px 20px;
+      gap: 30px;
+    }
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 752px;
+    width: 100%;
+    padding: 120px 0 40px 0;
+
+    @media @mobile {
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+  }
+
+  .footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 270px;
+      height: 31px;
+
+      @media @mobile {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+
+    @media @mobile {
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .footer-email {
+    display: flex;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .email-link {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .footer-separator {
+    width: 100%;
+    height: 0px;
+    opacity: 0.3;
+    background: #fff;
+    margin: 20px 0;
+
+    @media @mobile {
+      margin: 15px 0;
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+
+    @media @mobile {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      padding-bottom: 0;
+    }
+  }
+
+  .footer-legal {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    @media @mobile {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  .legal-link {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .footer-credit {
+    color: #fff;
+    font-family:
+      "DM Sans",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
