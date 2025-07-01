@@ -50,26 +50,99 @@
 
       async function loadModule(moduleName, containerId) {
         try {
+          console.log(`Loading module: ${moduleName}`);
           const response = await fetch(`../../modules/${moduleName}/tpl.html`);
           const html = await response.text();
+          console.log(`Fetched HTML for ${moduleName}, length:`, html.length);
 
           // Extract just the module content
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = html;
-          const moduleContent =
-            tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
-            tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
 
-          if (moduleContent) {
-            document.getElementById(containerId).innerHTML =
-              moduleContent.outerHTML;
-          } else {
-            console.warn(`Module content not found for ${moduleName}`);
+          // Special handling for sticky menu to include burger overlay
+          if (moduleName === "00-sticky-menu") {
+            console.log("Using special handling for sticky menu");
+            console.log(
+              "HTML content preview:",
+              html.substring(0, 200) + "..."
+            );
             document.getElementById(containerId).innerHTML = html;
+            console.log("Inserted HTML into", containerId);
+
+            // Check if burger overlay exists in DOM after insertion
+            setTimeout(() => {
+              const overlay = document.getElementById("burger-menu-overlay");
+              console.log("Burger overlay found in DOM:", !!overlay);
+              if (overlay) {
+                console.log("Overlay classes:", overlay.className);
+                console.log("Overlay children:", overlay.children.length);
+                console.log(
+                  "Overlay innerHTML length:",
+                  overlay.innerHTML.length
+                );
+                console.log(
+                  "Overlay innerHTML preview:",
+                  overlay.innerHTML.substring(0, 500)
+                );
+
+                // Check for specific elements
+                const container = overlay.querySelector(
+                  ".burger-menu-container"
+                );
+                const navigation = overlay.querySelector(".burger-navigation");
+                const contactInfo = overlay.querySelector(
+                  ".burger-contact-info"
+                );
+
+                console.log("Container found:", !!container);
+                console.log("Navigation found:", !!navigation);
+                console.log("Contact info found:", !!contactInfo);
+
+                if (container) {
+                  console.log("Container children:", container.children.length);
+                }
+              }
+            }, 100);
+          } else {
+            const moduleContent =
+              tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
+              tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
+
+            if (moduleContent) {
+              document.getElementById(containerId).innerHTML =
+                moduleContent.outerHTML;
+            } else {
+              console.warn(`Module content not found for ${moduleName}`);
+              document.getElementById(containerId).innerHTML = html;
+            }
           }
+
+          await loadModuleScript(moduleName);
         } catch (error) {
           console.error(`Error loading module ${moduleName}:`, error);
         }
+      }
+
+      async function loadModuleScript(moduleName) {
+        try {
+          if (document.querySelector(`script[data-module="${moduleName}"]`)) {
+            return;
+          }
+
+          const scriptResponse = await fetch(
+            `../../modules/${moduleName}/script.js`
+          );
+          if (scriptResponse.ok) {
+            const scriptContent = await scriptResponse.text();
+
+            const scriptElement = document.createElement("script");
+            scriptElement.setAttribute("data-module", moduleName);
+            scriptElement.textContent = scriptContent;
+            document.head.appendChild(scriptElement);
+
+            console.log(`Loaded script for module: ${moduleName}`);
+          }
+        } catch (error) {}
       }
     </script>
   </body>

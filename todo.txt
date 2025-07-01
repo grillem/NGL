@@ -1,1 +1,6 @@
+remove all console logs
 sticky header should only appear when scrolling down, after the hero section.
+
+
+At the end:
+- remove all fonts fallbacks
