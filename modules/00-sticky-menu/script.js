@@ -1,4 +1,3 @@
-// Initialize sticky menu and burger menu functionality
 (function () {
   setTimeout(function () {
     const stickyMenu = document.querySelector(".mdl-sticky-menu");
