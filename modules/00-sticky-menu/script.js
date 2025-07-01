@@ -1,4 +1,3 @@
-// Initialize burger menu immediately (DOM is already loaded when this script runs)
 (function () {
   console.log("Initializing burger menu...");
 
@@ -59,5 +58,5 @@
         closeMenu();
       }
     });
-  }, 100); // Small delay to ensure DOM elements are rendered
+  }, 100);
 })();
