@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="../../dist/css/style.css" />
   </head>
   <body>
+    <div id="sticky-menu-section"></div>
     <main>
+      <div id="hero-section"></div>
+      <div id="seo-section"></div>
       <div id="why-we-exist-section"></div>
       <div id="team-slide-section"></div>
       <div id="sponsors-section"></div>
@@ -25,12 +28,16 @@
       <div id="benefits-section"></div>
       <div id="kpi-desktop-section"></div>
       <div id="team-2-section"></div>
+      <div id="footer-section"></div>
     </main>
 
     <!-- Module loader script -->
     <script>
       // Simple module loader
       document.addEventListener("DOMContentLoaded", function () {
+        loadModule("00-sticky-menu", "sticky-menu-section");
+        loadModule("01-hero", "hero-section");
+        loadModule("02-seo", "seo-section");
         loadModule("03-why-we-exist", "why-we-exist-section");
         loadModule("04-team-slide", "team-slide-section");
         loadModule("04a-sponsors", "sponsors-section");
@@ -38,6 +45,7 @@
         loadModule("06-benefits", "benefits-section");
         loadModule("06a-kpi-desktop", "kpi-desktop-section");
         loadModule("07-team-2", "team-2-section");
+        loadModule("08-footer", "footer-section");
       });
 
       async function loadModule(moduleName, containerId) {
@@ -48,20 +56,47 @@
           // Extract just the module content
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = html;
-          const moduleContent =
-            tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
-            tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
 
-          if (moduleContent) {
-            document.getElementById(containerId).innerHTML =
-              moduleContent.outerHTML;
-          } else {
-            console.warn(`Module content not found for ${moduleName}`);
+          // Special handling for sticky menu to include burger overlay
+          if (moduleName === "00-sticky-menu") {
             document.getElementById(containerId).innerHTML = html;
+          } else {
+            const moduleContent =
+              tempDiv.querySelector(`[class^="mdl-${moduleName}"]`) ||
+              tempDiv.querySelector(`[class*="mdl-${moduleName}"]`);
+
+            if (moduleContent) {
+              document.getElementById(containerId).innerHTML =
+                moduleContent.outerHTML;
+            } else {
+              document.getElementById(containerId).innerHTML = html;
+            }
           }
+
+          await loadModuleScript(moduleName);
         } catch (error) {
           console.error(`Error loading module ${moduleName}:`, error);
         }
+      }
+
+      async function loadModuleScript(moduleName) {
+        try {
+          if (document.querySelector(`script[data-module="${moduleName}"]`)) {
+            return;
+          }
+
+          const scriptResponse = await fetch(
+            `../../modules/${moduleName}/script.js`
+          );
+          if (scriptResponse.ok) {
+            const scriptContent = await scriptResponse.text();
+
+            const scriptElement = document.createElement("script");
+            scriptElement.setAttribute("data-module", moduleName);
+            scriptElement.textContent = scriptContent;
+            document.head.appendChild(scriptElement);
+          }
+        } catch (error) {}
       }
     </script>
   </body>
