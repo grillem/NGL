@@ -276,6 +276,89 @@ h6 {
   object-fit: cover;
   z-index: 1;
 }
+.mdl-hero .hero-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 41px;
+  box-sizing: border-box;
+}
+.mdl-hero .hero-navbar .hero-navbar-container {
+  display: flex;
+  width: 100%;
+  max-width: 1598px;
+  justify-content: space-between;
+  align-items: center;
+}
+.mdl-hero .hero-navbar .logo-section .nextgenlab-logo {
+  width: 219.309px;
+  height: 25.009px;
+  flex-shrink: 0;
+}
+.mdl-hero .hero-navbar .menu-info-section {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.mdl-hero .hero-navbar .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mdl-hero .hero-navbar .contact-info .contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.mdl-hero .hero-navbar .contact-info .phone-icon,
+.mdl-hero .hero-navbar .contact-info .mail-icon {
+  width: 20px;
+  height: 20px;
+}
+.mdl-hero .hero-navbar .contact-info .contact-text,
+.mdl-hero .hero-navbar .contact-info .language-text {
+  color: #fff;
+  font-family: "DM Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.mdl-hero .hero-navbar .contact-info .separator {
+  width: 1px;
+  height: 16px;
+  opacity: 0.8;
+  background: #fff;
+}
+.mdl-hero .hero-navbar .contact-info .language-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.mdl-hero .hero-navbar .contact-info .language-selector .chevron-icon {
+  width: 20px;
+  height: 20px;
+}
+.mdl-hero .hero-navbar .menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.mdl-hero .hero-navbar .menu-button .menu-icon {
+  width: 48px;
+  height: 48px;
+}
 .mdl-hero .hero-container {
   z-index: 2;
   width: 100%;
@@ -857,7 +940,6 @@ h6 {
   max-height: 100%;
   object-fit: contain;
 }
-
 .mdl-sponsors .square-logo {
   width: 130px;
   height: 130px;
@@ -903,7 +985,7 @@ h6 {
 .mdl-galeria .pagination-indicator {
   left: 50px;
   top: 50%;
-  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
@@ -1136,8 +1218,7 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 62.43%, rgba(0, 0, 0, 0.7) 105.57%), linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), 
-  url("../../assets/images/kpi/desktop.png") lightgray 50% / cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 62.43%, rgba(0, 0, 0, 0.7) 105.57%), linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/kpi/desktop.png") lightgray 50% / cover no-repeat;
   height: 565px;
   color: #fff;
 }
