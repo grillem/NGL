@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,7 @@
     <div id="sticky-menu-section"></div>
     <main>
       <div id="hero-section"></div>
+      <div id="seo-section"></div>
       <div id="why-we-exist-section"></div>
       <div id="team-slide-section"></div>
       <div id="sponsors-section"></div>
@@ -27,6 +28,7 @@
       <div id="benefits-section"></div>
       <div id="kpi-desktop-section"></div>
       <div id="team-2-section"></div>
+      <div id="footer-section"></div>
     </main>
 
     <!-- Module loader script -->
@@ -35,6 +37,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         loadModule("00-sticky-menu", "sticky-menu-section");
         loadModule("01-hero", "hero-section");
+        loadModule("02-seo", "seo-section");
         loadModule("03-why-we-exist", "why-we-exist-section");
         loadModule("04-team-slide", "team-slide-section");
         loadModule("04a-sponsors", "sponsors-section");
@@ -42,6 +45,7 @@
         loadModule("06-benefits", "benefits-section");
         loadModule("06a-kpi-desktop", "kpi-desktop-section");
         loadModule("07-team-2", "team-2-section");
+        loadModule("08-footer", "footer-section");
       });
 
       async function loadModule(moduleName, containerId) {
