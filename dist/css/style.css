@@ -364,13 +364,8 @@ h6 {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease, transform 0.3s ease;
 }
-.mdl-sponsors .logo-image:hover {
-  filter: brightness(0.8) invert(1);
-  transform: scale(1.05);
-}
+
 .mdl-sponsors .square-logo {
   width: 130px;
   height: 130px;
