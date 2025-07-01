@@ -4,9 +4,10 @@
   "description": "NGL project with modular structure",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run watch-less\" \"npm run serve\"",
-    "serve": "live-server --port=3000 --open=/pages/home/ --ignore=node_modules,modules --watch=dist/css,pages --no-css-inject",
+    "dev": "concurrently \"npm run watch-less\" \"npm run serve\" \"npm run watch-reload\"",
+    "serve": "npx http-server -p 3001 -o /pages/home/ -c-1",
     "watch-less": "chokidar \"src/less/**/*.less\" \"modules/**/*.less\" -c \"npm run build-less\"",
+    "watch-reload": "nodemon --watch dist/css --watch pages --watch modules --ext css,html,js --exec \"echo 'Files changed - refresh your browser'\"",
     "build-less": "lessc src/less/style.less dist/css/style.css",
     "build-less-compressed": "lessc src/less/style.less dist/css/style.min.css --compress",
     "build": "npm run build-less && npm run build-less-compressed",
