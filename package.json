@@ -14,7 +14,6 @@
     "test-change": "npm run build-less && echo '✅ LESS compiled! Check your browser - it should auto-refresh.'"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.4",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.6.0",
     "http-server": "^14.1.1",
