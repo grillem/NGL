@@ -1,39 +1,22 @@
 (function () {
-  console.log("Initializing burger menu...");
-
-  // Add a small delay to ensure DOM elements are available
   setTimeout(function () {
     const menuToggle = document.getElementById("burger-menu-toggle");
     const menuOverlay = document.getElementById("burger-menu-overlay");
     const menuClose = document.getElementById("burger-menu-close");
     const navLinks = document.querySelectorAll(".nav-link");
 
-    console.log("Menu elements:", { menuToggle, menuOverlay, menuClose });
-
     if (!menuToggle || !menuOverlay) {
-      console.error("Burger menu elements not found!");
       return;
     }
 
-    console.log("Burger menu initialized successfully!");
-
-    // Open menu
     menuToggle.addEventListener("click", function (e) {
-      console.log("Burger menu clicked!");
       e.preventDefault();
-      menuOverlay.classList.add("active");
-      document.body.style.overflow = "hidden";
-      console.log(
-        "Menu should be visible now, classes:",
-        menuOverlay.classList
-      );
+      // TODO: removed for debugging
+      // menuOverlay.classList.add("active");
     });
 
-    // Close menu
     function closeMenu() {
-      console.log("Closing menu");
       menuOverlay.classList.remove("active");
-      document.body.style.overflow = "";
     }
 
     if (menuClose) {

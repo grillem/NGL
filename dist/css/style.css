@@ -205,9 +205,6 @@ h6 {
   text-decoration: none;
   display: block;
 }
-.burger-menu-overlay .burger-navigation .nav-menu .nav-link:hover {
-  opacity: 0.8;
-}
 .burger-menu-overlay .burger-navigation .nav-menu .nav-link em {
   font-style: italic;
 }
